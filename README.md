@@ -1,4 +1,4 @@
-# Multi-Source Data Enrichment Pipeline
+#  Packaging a Multi-Source Data Enrichment Pipeline
 
 <p>This project implements a data pipeline that fetches data from multiple API endpoints, handles pagination, enriches product data with seller information, and generates performance insights. The pipeline is configurable, modular, and built using production-grade ETL patterns.</p>
 
@@ -86,7 +86,7 @@ Results are stored in:
 ## Installing and Running the Package 
 ### Open a virtual environment
 
-    ``` 
+     
        python -m venv environment_name
 
        #activate the environment before you install the package
@@ -96,7 +96,7 @@ Results are stored in:
        (linux)
        source\bin\activate
 
-    ```
+    
     
 ### install the package
  ```
@@ -105,3 +105,4 @@ Results are stored in:
 
 
 **Note :**  use the "--no-deps" before the program name to avoid dependencies errors.
+
