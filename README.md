@@ -1,11 +1,11 @@
-# Packaging a Multi-Source Data Enrichment Pipeline
+# Multi-Source Data Enrichment Pipeline
 
 <p>This project implements a data pipeline that fetches data from multiple API endpoints, handles pagination, enriches product data with seller information, and generates performance insights. The pipeline is configurable, modular, and built using production-grade ETL patterns.</p>
 
 
 ## Overview
 
-<p>You work as a data engineer at OmniCart Analytics, where clients need visibility into not only what products sell, but who is selling effectively. Product and seller information are stored in separate systems and exposed via different endpoints, so the goal is to:</p>
+<p>Working as a data engineer at OmniCart Analytics, where clients need visibility into not only what products sell, but who is selling effectively. Product and seller information are stored in separate systems and exposed via different endpoints, so the goal is to:</p>
 
 * Retrieve all product and seller records.
 
@@ -65,8 +65,6 @@ Pipeline	Coordinates the entire ETL process and outputs the final seller_perform
 │   ├── test_data_enricher.py
 │   ├── test_data_analyzer.py
 │   └── test_config.py
-├── main.py
-├── requirements.txt
 └── README.md
 ``
 ## Insights Generated
@@ -84,33 +82,22 @@ Results are stored in:
   
    ``` 
 
-## Running the Package 
+## Installing and Running the Package 
+### Open a virtual environment
 
-`` # Install poetry
-pip install -r requirements.txt
+    ``` 
+       python -m venv environment_name
 
-### To add the poetry shell for ease of usage
+       #activate the environment before you install the package
+       (windows)
+       environment_name\Scripts\activate
 
-  poetry self add poetry-plugin-shell
+       (linux)
+       source\bin\activate
 
+    ```
+    
+### install the package
+ pip install -i https://test.pypi.org/simple/  --no-deps omnicart-pipeline-project==0.1.0-
 
-### To see your project dependencies
- poetry show
-
-### use poetry to add your dependencies
-
-  poetry add requests
-
-  poetry add --dev pytest
-
-# Run the cli
-# Option 1: Use poetry run directly
-  
-  poetry run python -m omnicart_pipeline.cli
-```
- or 
-
- ```
-    poetry run cli
-
- ```
+** Note : **  use the "--no-deps" before the program name to avoid dependencies errors.
