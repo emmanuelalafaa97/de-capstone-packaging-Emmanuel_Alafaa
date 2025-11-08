@@ -90,10 +90,10 @@ Results are stored in:
        python -m venv environment_name
 
   ### activate the environment before you install the package
-       (windows)
+  #### on windows
        environment_name\Scripts\activate
 
-       (linux)
+  #### on linux
        source\bin\activate
 
     
@@ -105,5 +105,6 @@ Results are stored in:
 
 
 **Note :**  use the "--no-deps" before the program name to avoid dependencies errors.
+
 
 
