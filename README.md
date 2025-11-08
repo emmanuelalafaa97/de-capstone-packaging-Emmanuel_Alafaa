@@ -84,12 +84,12 @@ Results are stored in:
    ``` 
 
 ## Installing and Running the Package 
-### Open a virtual environment
+### create a virtual environment
 
      
        python -m venv environment_name
 
-       #activate the environment before you install the package
+  ### activate the environment before you install the package
        (windows)
        environment_name\Scripts\activate
 
@@ -105,4 +105,5 @@ Results are stored in:
 
 
 **Note :**  use the "--no-deps" before the program name to avoid dependencies errors.
+
 
